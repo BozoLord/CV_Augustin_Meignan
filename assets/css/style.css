@@ -568,7 +568,8 @@ SOCIAL ICON
     margin-bottom: 45px;
 }
 .my-signature img{
-    width: inherit;
+    // width: inherit;
+    max-width: 250px
 }
 
 
