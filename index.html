@@ -490,10 +490,32 @@
                   <textarea name="message" class="form-control" id="message" rows="5" required=""></textarea>
                 </div>
 
-                <input type="submit" name="submit" class="btn btn-primary">Envoyer le message</input>
+                <input type="submit" name="submit" class="btn btn-primary"></input>
               </form>
             </div>
 
+          </div>
+
+          <div class="col-md-12">
+            <div id="map">
+              <script>
+                function initMap() {
+                  var uluru = {lat: -25.363, lng: 131.044};
+                  var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 4,
+                    center: uluru
+                  });
+                  var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                  });
+                }
+              </script>
+              <script async defer
+              src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+              </script>
+            </div>
+            
           </div>
 
           <div class="col-md-12">
@@ -517,13 +539,13 @@
               </div>
             </div>
 
-          <div class="row">
+<!--           <div class="row">
             <div class="col-sm-12">
               <div class="location-map">
                 <div id="mapCanvas" class="map-canvas"></div>
               </div>
             </div>
-          </div>
+          </div> -->
 
           </div>
         </div>
