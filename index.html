@@ -25,6 +25,8 @@
 	<link href="assets/css/style.css" rel="stylesheet" media="screen">
   <!-- Responsive CSS -->
   <link href="assets/css/responsive.css" rel="stylesheet">
+  <!-- Validator -->
+  <link href="https://cdnjs.com/libraries/1000hz-bootstrap-validator" rel="stylesheet">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -467,36 +469,42 @@
         <div class="row">
           <div class="col-md-6">
             <div class="contact-form">
-              <strong>Envoyer un message</strong>
-              <form name="contact-form" id="contactForm" action="sendemail.php" method="POST">
-
+              <form role="form" id="contactForm" class="contact-form" data-toggle="validator" class="shake">
                 <div class="form-group">
-                  <label for="name">Nom</label>
-                  <input type="text" name="name" class="form-control" id="name" required="">
+                  <div class="controls">
+                    <input type="text" id="name" class="form-control" placeholder="Name" required data-error="Please enter your name">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="controls">
+                    <input type="email" class="email form-control" id="email" placeholder="Email" required data-error="Please enter your email">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="controls">
+                    <input type="text" id="msg_subject" class="form-control" placeholder="Subject" required data-error="Please enter your message subject">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="controls">
+                    <textarea id="message" rows="7" placeholder="Massage" class="form-control" required data-error="Write your message"></textarea>
+                    <div class="help-block with-errors"></div>
+                  </div>  
                 </div>
 
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" name="email" class="form-control" id="email" required="">
-                </div>
-
-                <div class="form-group">
-                  <label for="subject">Objet</label>
-                  <input type="text" name="subject" class="form-control" id="subject">
-                </div>
-
-                <div class="form-group">
-                  <label for="message">Message</label>
-                  <textarea name="message" class="form-control" id="message" rows="5" required=""></textarea>
-                </div>
-
-                <input type="submit" name="submit" class="btn btn-primary"></input>
+                <button type="submit" id="submit" class="btn btn-effect"><i class="fa fa-check"></i>Envoyer</button>
+                <div id="msgSubmit" class="h3 text-center hidden"></div> 
+                <div class="clearfix"></div>   
               </form>
             </div>
+          </div>
 
           </div>
 
-          <div class="col-md-12">
+          <div class="">
             <div id="map">
               <script>
                 function initMap() {
