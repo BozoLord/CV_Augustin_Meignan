@@ -120,6 +120,7 @@ h2 {
 h3 {
     font-size: 24px;
     line-height: 24px;
+    color: #68c3a3;
 }
 
 h4 {
@@ -182,7 +183,7 @@ h6 {
 }
 
 /*large-btn*/
-.btn-lg, 
+.btn-lg,
 .btn-group-lg>.btn {
     padding: 14px 20px;
     font-size: 14px;
@@ -195,11 +196,11 @@ h6 {
     border-color: rgba(51, 51, 51, 0.15);
 }
 
-.btn-primary:hover, 
-.btn-primary:focus, 
-.btn-primary.focus, 
-.btn-primary:active, 
-.btn-primary.active, 
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary.active,
 .open>.dropdown-toggle.btn-primary {
     color: #fff;
     background-color: #4eb28f;
@@ -212,11 +213,11 @@ h6 {
     border-color: rgba(51, 51, 51, 0.15);
 }
 
-.btn-info:hover, 
-.btn-info:focus, 
-.btn-info.focus, 
-.btn-info:active, 
-.btn-info.active, 
+.btn-info:hover,
+.btn-info:focus,
+.btn-info.focus,
+.btn-info:active,
+.btn-info.active,
 .open>.dropdown-toggle.btn-info {
     color: #fff;
     background-color: #4aa0c2;
@@ -229,10 +230,10 @@ h6 {
     border: 1px solid #fff;
     color: #fff;
 }
-.btn-default:hover, 
-.btn-default:focus, 
-.btn-default.focus, 
-.btn-default:active, 
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:active,
 .btn-default.active{
     color: #68c3a3;
     background-color: #fff;
@@ -269,7 +270,7 @@ ul, ol {
 
 
 ul.list-check {
-    
+
 }
 
 ul.list-check li{
@@ -381,8 +382,8 @@ ul.list-check li::before {
 	margin-bottom: 20px;
 }
 
-/* 
-SOCIAL ICON 
+/*
+SOCIAL ICON
 -------------------------------------------*/
 .social-icons {
     margin-top: 20px;
@@ -420,7 +421,7 @@ SOCIAL ICON
     -webkit-transition: all 300ms;
        -moz-transition: all 300ms;
          -o-transition: all 300ms;
-            transition: all 300ms;            
+            transition: all 300ms;
 }
 
 .social-icons a i:hover::after{
@@ -970,11 +971,11 @@ Resume Timeline
 /* === Skill Section === */
 .skills-section {
     background-color: #1a1e23;
-    color: #fff;   
+    color: #fff;
 }
 .skills-section .section-title{
     color: #fff;
-    margin-bottom: 110px;  
+    margin-bottom: 110px;
 }
 .skills-section .section-title h2{
     color: #fff;
@@ -1053,8 +1054,8 @@ Resume Timeline
     text-align: center;
 }
 .chart canvas {
-    position:absolute; 
-    top:0; 
+    position:absolute;
+    top:0;
     left:0;
 }
 .percent {
@@ -1224,7 +1225,7 @@ Resume Timeline
     text-align: center;
 }
 
-.portfolio:hover .tt-overlay, 
+.portfolio:hover .tt-overlay,
 .portfolio:hover .links {
     opacity: 1;
     -webkit-transform: translate(0,0);
@@ -1250,9 +1251,9 @@ Resume Timeline
   opacity: 0;
   -webkit-backface-visibility: hidden;
   /* ideally, transition speed should match zoom duration */
-  -webkit-transition: all 0.3s ease-out; 
-  -moz-transition: all 0.3s ease-out; 
-  -o-transition: all 0.3s ease-out; 
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 
@@ -1263,7 +1264,7 @@ Resume Timeline
     opacity: 0.8;
 }
 
-.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing .mfp-container,
 .mfp-with-zoom.mfp-removing.mfp-bg {
   opacity: 0;
 }
@@ -1276,7 +1277,7 @@ Resume Timeline
     background: url(../../assets/images/counter-bg.jpg) no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
-    color: #fff;  
+    color: #fff;
 }
 
 .tt-overlay-bg {
@@ -1301,7 +1302,7 @@ Resume Timeline
 
 /* === Blog Section === */
 .latest-blog-section {
-  
+
 }
 .blog-post-wrapper {
     padding: 4px;
@@ -1421,7 +1422,7 @@ Icon for all respective meta
 
 .the-author,
 .the-time,
-.the-share, 
+.the-share,
 .the-comments {
     position: relative;
     padding-left: 20px;
@@ -1441,7 +1442,7 @@ Icon for all respective meta
     background: url(../../assets/images/hire-bg.jpg) no-repeat top center #68C3A3;
     background-attachment: fixed;
     background-size: cover;
-    color: #fff;  
+    color: #fff;
 }
 .hire-section-bg {
     padding: 110px 0;
@@ -1463,7 +1464,7 @@ Icon for all respective meta
 
 /* === Contact Section === */
 .contact-section  {
-  
+
 }
 
 .contact-section strong {
@@ -1507,7 +1508,7 @@ Icon for all respective meta
 }
 
 #map{
-    
+
 }
 
 
@@ -1516,7 +1517,7 @@ Icon for all respective meta
     background: #1a1e23;
     padding: 36px 0;
     color: #fff;
-  
+
 }
 .copyright p {
     margin: 0;
@@ -1814,4 +1815,12 @@ Icon for all respective meta
     border: 5px solid #FFF;
     padding: 5px;
     box-shadow: 0 0px 0px 1px #eee;
+}
+
+.contact-center {
+    text-align: center;
+}
+
+.contact-icon{
+    font-size: 45px;
 }
